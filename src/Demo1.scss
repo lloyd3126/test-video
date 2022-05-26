@@ -1,0 +1,120 @@
+@import "~bootstrap/scss/bootstrap";
+
+$column-width: 480px;
+$gutter-width: 20px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000;
+}
+
+.app {
+  margin: auto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  color: #fff;
+}
+
+.section {
+  display: inline-block;
+  max-width: $column-width;
+  margin: $gutter-width;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #000;
+}
+
+.player-wrapper {
+  width: 100%;
+  height: 75vh;
+  z-index: 1;
+}
+
+.player-cover {
+  width: 100%;
+  height: 75vh;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  color: #222;
+}
+
+.card-wrap {
+  height: 100%;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+.card-wrap .card-header{
+  color: #222;
+}
+
+.chosen {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+.chosen:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #ccc;
+}
+
+.redColor {
+  color: #f24;
+}
+
+.modal-body {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.timeText {
+  right: 0;
+  top: 0;
+  position: absolute;
+  
+}
+
+.control-section {
+  width: 100%;
+  background-color: #222;
+  border: 2px solid #555;
+  border-radius: 5px;
+
+}
+
+.react-player {
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, .1);
+}
+
+.faded {
+  color: rgba(0, 0, 0, .5);
+}
+
+.footer {
+  margin: $gutter-width;
+}
+
+#bookmark-section {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+}
+
+#bookmark-section .bookmark {
+  font-size: 8px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
