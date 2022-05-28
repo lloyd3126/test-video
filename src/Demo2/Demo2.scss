@@ -3,11 +3,13 @@
 $column-width: 480px;
 $gutter-width: 20px;
 
+// https://colorhunt.co/palette/f9ebc8fefbe7dae5d0a0bcc2
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
+  background-color: #A0BCC2;
 }
 
 .container-wrapper  {
@@ -17,22 +19,27 @@ body {
   height: 100vh;
 }
 
-.player-wrapper {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
+
+#sendBox, #messages-section, .player-wrapper2, .navbar-section {
+  background-color: #fff;
+  border: 1px #fff solid !important;
+  box-shadow:4px 4px 6px -4px rgba(0,0,0,0.47)
+
 }
 
 
-.message-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 90vh;
+.player-wrapper2 {
+  border-radius: 0.25rem;
+  flex: 1;
 }
 
 
-.messages-section {
+#main-section {
+  height: 80vh;
+}
+
+
+#messages-section {
   color: #000;
   font-size: 1rem;
   overflow-y: scroll;
@@ -51,22 +58,12 @@ body {
   // color: #0000FF;
 }
 
-.card:hover{
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-} 
-
 .card {
   cursor: pointer;
 }
 
 .w-80 {
   width: 80%;
-}
-
-#hourVal,#minuteVal,#secondVal, #authorVal, #messageVal, #urlVal,
-#basic-addon1, #basic-addon2, #basic-addon3, 
-.sendBox, .messages-section, .descriptionBox, .messageBox {
-  border-color: #6c757d !important;
 }
 
 .descriptionBox {

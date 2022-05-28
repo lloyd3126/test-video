@@ -8,17 +8,28 @@ import {
 import './index.css';
 
 import Demo1 from './Demo1';
-import Demo2 from './Demo2';
+import Demo2 from './Demo2/Demo2';
+import Login from './Login/Login';
+import Register from './Register/Register';
+import Reset from './Reset/Reset';
+import Dashboard from './Dashboard/Dashboard';
 
 import reportWebVitals from './reportWebVitals';
-
-
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/demo2/:userId" element={<Demo2 />} />
+        <Route path="demo2">
+          <Route path="login" element={<Login />}/>
+          <Route path="register" element={<Register />}/>
+          <Route path="reset" element={<Reset />}/>
+          <Route path="dashboard" element={<Dashboard />}/>
+          
+          <Route path="ducument" >
+            <Route path=":docId" element={<Demo2 />} />
+          </Route>
+        </Route>
         <Route path="/demo1" element={<Demo1 />} />
       </Routes>
     </BrowserRouter>
